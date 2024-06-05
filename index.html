@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/media-queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="login">
+        <div class="img"></div>
+        <div class="formulario">
+          <h1>Login</h1>
+          <p>
+            Seja Bem-Vindo! Faça login para acessar sua conta e configurar o
+            ambiente.
+          </p>
+          <form action="index.php" method="post" autocomplete="on">
+            <div class="campo-login">
+              <i class="material-symbols-outlined"> perm_contact_calendar </i>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Seu E-mail"
+                autocomplete="email"
+              />
+              <label for="email">Email</label>
+            </div>
+
+            <div class="campo-senha">
+              <i class="material-symbols-outlined"> key </i>
+              <input
+                type="password"
+                name="senha"
+                id="senha"
+                placeholder="Sua Senha"
+                autocomplete="current-password"
+              />
+              <label for="senha">Senha</label>
+            </div>
+            <input type="submit" value="Enviar" id="enviar"/>
+
+            <a href="esqueci-senha.html" class="botao"
+              >Esqueci Minha Senha!<i class="material-symbols-outlined">
+                mail
+              </i>
+            </a>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

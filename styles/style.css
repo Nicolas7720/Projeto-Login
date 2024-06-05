@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #49a09d;
+    --cor-secundaria: #5f2c82;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-secundaria);
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .login {
+        background-color: white;
+        width: 300px;
+        height: 500px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.445);
+        transition: width 0.3s height 0.3s;
+        transition-timing-function: ease;
+
+        & .img {
+            background: var(--cor-secundaria) url(../img/pexels-lawrence-lam-988602849-20493483.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            height: 40%;
+            display: block;
+        }
+
+        & .formulario {
+            display: block;
+            padding: 10px;
+
+            & h1 {
+                text-align: center;
+                margin: 5px 0px;
+            }
+
+            & p {
+                text-align: center;
+
+            }
+
+            & form {
+                margin: 10px 0px;
+
+                & div {
+                    margin-bottom: 5px;
+                }
+
+                & #email {
+                    width: 70%;
+                    height: 35px;
+                    outline: none;
+                    border-radius: 6px;
+                    padding: 5px;
+                }
+
+                & #email::placeholder {
+                    color: var(--cor-secundaria);
+                }
+
+                & #senha {
+                    width: 70%;
+                    height: 35px;
+                    outline: none;
+                    border-radius: 6px;
+                    padding: 5px;
+                }
+
+                & #senha::placeholder {
+                    color: var(--cor-secundaria);
+                }
+
+                & #enviar {
+                    margin: 10px 0px;
+                    height: 30px;
+                    width: 50px;
+                }
+
+                & .botao {
+                    display: flex;
+                    justify-content: end;
+                    align-items: end;
+                    margin-right: 10px;
+                    text-decoration: none;
+
+                    & i{
+                        margin-left: 5px;
+                    }
+                }
+
+                & :hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
