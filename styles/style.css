@@ -58,7 +58,11 @@ main {
 
             & form {
                 margin: 10px 0px;
-
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                justify-content: center;
+                
                 & div {
                     margin-bottom: 5px;
                 }
@@ -72,18 +76,25 @@ main {
                 }
 
                 & i {
-                    display: inline-block;
+                    display: inline-flex;
                     color: white;
                     width: 40px;
-                    height: 50px;
-                    font-size: 2em;
-                    padding: 5px;
+                    height: 100%;
+                    font-size: 2.2em;
+
+                    flex-flow: row wrap;
+                    align-items: flex-end;
+
                 }
 
                 & .campo-login {
                     background-color: purple;
                     padding: 2px 5px 12px 5px;
                     border-radius: 10px;
+                    width: 100%;
+                    height: 65px;
+                    display: flex;
+                    gap: 5px;
 
                     & #email {
                         display: inline;
@@ -92,6 +103,7 @@ main {
                         outline: none;
                         border-radius: 6px;
                         padding: 8px;
+                        align-self: flex-end;
                     }
 
                     & #email::placeholder {
@@ -109,6 +121,9 @@ main {
                     background-color: purple;
                     padding: 2px 5px 12px 5px;
                     border-radius: 10px;
+                    height: 65px;
+                    display: flex;
+                    gap: 5px;
 
                     & #senha {
                         width: 85%;
@@ -117,6 +132,7 @@ main {
                         border-radius: 6px;
                         padding: 5px;
                         text-decoration: none;
+                        align-self: flex-end;
                     }
 
                     & #senha::placeholder {
@@ -133,13 +149,22 @@ main {
 
             & #enviar {
                 width: 90%;
-                margin: 10px 4%;
-                height: 40px;
+                display: flex;
+                height: 45px;
                 font-size: 1.2em;
                 font-weight: 500;
                 color: var(--cor-secundaria);
                 animation: borda infinite 4s;
                 animation-timing-function: ease-out;
+                margin: 5px 0px;
+                cursor: pointer;
+
+                align-self: center;
+                justify-content: center;
+            }
+
+            & #enviar:hover {
+                height: 46px;
             }
 
             & .botao {
@@ -151,7 +176,7 @@ main {
                 color: white;
                 font-size: 1.2em;
                 border-radius: 10px;
-
+                
 
                 & i {
                     margin-left: 5px;
@@ -172,9 +197,19 @@ main {
 @keyframes borda {
     0% {
         border-color: var(--cor-principal);
+        background-color: var(--cor-secundaria);
+        color: var(--cor-principal);
+    }
+
+    50% {
+        border-color: var(--cor-secundaria);
+        background-color: var(--cor-principal);
+        color: var(--cor-secundaria);
     }
 
     100% {
-        border-color: var(--cor-secundaria);
+        border-color: var(--cor-principal);
+        background-color: var(--cor-secundaria);
+        color: var(--cor-principal);
     }
 }

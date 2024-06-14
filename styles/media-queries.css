@@ -31,17 +31,9 @@
                     font-size: 1.0em;
                 }
 
-                & form {
-
-                    & .botao {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 100%;
-
-
-
-                    }
+                & .botao {
+                    display: flex;
+                    justify-content: center;
                 }
             }
         }
@@ -80,8 +72,6 @@
                 & .botao {
                     display: flex;
                     justify-content: center;
-                    align-items: center;
-                    width: 100%;
 
                 }
             }
