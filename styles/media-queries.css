@@ -31,11 +31,17 @@
                     font-size: 1.0em;
                 }
 
-                & .botao {
-                    display: flex;
-                    justify-content: end;
-                    align-items: end;
+                & form {
 
+                    & .botao {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+
+
+
+                    }
                 }
             }
         }
@@ -73,11 +79,11 @@
 
                 & .botao {
                     display: flex;
-                    justify-content: end;
-                    align-items: end;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+
                 }
-
-
             }
         }
     }
